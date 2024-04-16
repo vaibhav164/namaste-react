@@ -28,7 +28,10 @@ const complexElement = React.createElement(
  *      </div>
  * </div>
  */
-
+/****___________________________
+ * when we pass a sibling tags or elements react will throw an error
+ * that Each child in a list should have a unique "key" prop.
+ */
 const SiblingElement = React.createElement(
   "div",
   { id: "grandParent" },
