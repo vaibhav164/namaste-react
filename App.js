@@ -8,7 +8,7 @@ const heading = React.createElement(
  * attributes as i had passed and we can check it in Element of Browser
  * as this <h1 id="heading" name="vaibhavReact">EHading from React</h1>
  */
-console.log("heading______", heading);
+// console.log("heading______", heading);
 /****
  *
  * if we console the heading or return value of React.createElement
@@ -27,5 +27,17 @@ _source: null
 [[Prototype]]: Object
 }
  */
+
+//______Props are children and attributes we pass in an component
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(heading);
+//so L33 is it takes heading React element that is and Object at the end
+//and converts it to an html element and finaly pushes it into the root
+//element
+
+const heeadinDemo = document.createElement("h1");
+heeadinDemo.innerHTML = "Hellow Demo";
+
+console.log(heeadinDemo);
+
+//L41 will give you an h1 tag
