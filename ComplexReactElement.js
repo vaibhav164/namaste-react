@@ -18,6 +18,26 @@ const complexElement = React.createElement(
   )
 );
 
+/***
+ * lets create a complex structur which has similar style but have
+ * sibiling element as below
+ * <div id='grandParent'>
+ *      <div id='parent'>
+ *          <h3 id='child1'>Complex Element child1</h3>
+ *          <h2 id='child2'>Complex Element Child2</h2>
+ *      </div>
+ * </div>
+ */
+
+const SiblingElement = React.createElement(
+  "div",
+  { id: "grandParent" },
+  React.createElement("div", { id: "parent" }, [
+    React.createElement("h2", { id: "child1" }, "Complex Element child1"),
+    React.createElement("h2", { id: "child2" }, "Complex Element child2"),
+  ])
+);
+
 const container = ReactDOM.createRoot(document.getElementById("root"));
 
-container.render(complexElement);
+container.render(SiblingElement);
