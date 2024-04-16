@@ -33,7 +33,7 @@ const SiblingElement = React.createElement(
   "div",
   { id: "grandParent" },
   React.createElement("div", { id: "parent" }, [
-    React.createElement("h2", { id: "child1" }, "Complex Element child1"),
+    React.createElement("h3", { id: "child1" }, "Complex Element child1"),
     React.createElement("h2", { id: "child2" }, "Complex Element child2"),
   ])
 );
